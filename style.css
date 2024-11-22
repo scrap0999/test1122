@@ -16,7 +16,8 @@ body {
 /* 添加字体声明 */
 @font-face {
     font-family: 'Cooper Black';
-    src: url('../fonts/CooperBlack.ttf') format('truetype');
+    src: url('/fonts/CooperBlack.otf') format('opentype');
+    font-display: swap;
 }
 
 /* 导航栏样式 */
@@ -30,20 +31,20 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    font-family: 'Cooper Black', Arial, sans-serif;
+    font-family: 'Cooper Black', Arial, sans-serif !important;
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
     margin-left: 2rem;
-    font-family: 'Cooper Black', Arial, sans-serif;
+    font-family: 'Cooper Black', Arial, sans-serif !important;
 }
 
 .logo a {
     color: #fff;
     text-decoration: none;
-    font-family: 'Cooper Black', Arial, sans-serif;
+    font-family: 'Cooper Black', Arial, sans-serif !important;
 }
 
 .logo a:hover {
@@ -70,7 +71,7 @@ nav {
 .signature {
     margin-top: 1rem;
     font-size: 1.2rem;
-    font-family: 'Cooper Black', Arial, sans-serif;
+    font-family: 'Cooper Black', Arial, sans-serif !important;
 }
 
 /* 作品展示页样式 */
@@ -112,7 +113,7 @@ nav {
 
 #findme h2 {
     margin-bottom: 2rem;
-    font-family: 'Cooper Black', Arial, sans-serif;
+    font-family: 'Cooper Black', Arial, sans-serif !important;
 }
 
 .social-links {
@@ -246,4 +247,10 @@ nav {
 /* 添加平滑滚动 */
 html {
     scroll-behavior: smooth;
+} 
+
+/* 添加字体平滑效果 */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 } 
