@@ -271,7 +271,8 @@ nav {
 
     /* Find Me页面移动端样式 */
     #findme {
-        padding: 6rem 1rem;
+        padding: 15rem 1rem;  /* 从10rem增加到15rem */
+        margin-top: 4rem;
     }
 
     .social-links {
@@ -282,8 +283,13 @@ nav {
 
     .social-links img,
     .social-links svg {
-        width: 35px;  /* 减小图标大小 */
+        width: 35px;
         height: 35px;
+    }
+
+    /* 调整小红书图标的对齐 */
+    .xiaohongshu img {
+        margin-top: 12px !important;  /* 增加顶部边距以对齐底部 */
     }
 
     .signature {
