@@ -132,11 +132,16 @@ nav {
     text-decoration: none;
 }
 
-.social-links img {
-    width: 200px;
-    height: 200px;
+.social-links svg,
+.social-links span[style*="font-size: 50px"] {
     margin-bottom: 1rem;
 }
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 
 /* 响应式设计 */
 @media (max-width: 768px) {
@@ -256,4 +261,23 @@ html {
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+} 
+
+/* 修改微信图标的样式 */
+.wechat img {
+    width: 50px !important;  /* 覆盖原有的 200px 宽度 */
+    height: 50px !important;  /* 覆盖原有的 200px 高度 */
+    margin-bottom: 1rem;
+} 
+
+/* 社交图标样式 */
+.social-links svg,
+.social-links span[style*="font-size: 50px"] {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 } 
