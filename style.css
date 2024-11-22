@@ -132,7 +132,7 @@ nav {
 /* Find Me页面样式 */
 #findme {
     min-height: 100vh;
-    padding: 4rem 2rem;
+    padding: 12rem 2rem;
     text-align: center;
 }
 
@@ -271,7 +271,7 @@ nav {
 
     /* Find Me页面移动端样式 */
     #findme {
-        padding: 2rem 1rem;  /* 减小内边距 */
+        padding: 6rem 1rem;
     }
 
     .social-links {
