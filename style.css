@@ -246,9 +246,16 @@ nav {
 
     /* Find Me页面移动端样式 */
     .social-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+        flex-direction: row;  /* 保持横向排列 */
+        justify-content: center;  /* 水平居中 */
+        gap: 2rem;  /* 减小图标间距 */
+        margin-top: 1.5rem;  /* 减小顶部间距 */
+    }
+
+    .social-links img,
+    .social-links svg {
+        width: 40px;  /* 移动端稍微缩小图标 */
+        height: 40px;
     }
 } 
 
