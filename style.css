@@ -1,0 +1,263 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* 导航栏样式 */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(15, 15, 15, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+/* 首页样式 */
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 80%;
+    height: auto;
+}
+
+.signature {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* 作品展示页样式 */
+.gallery {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* Find Me页面样式 */
+#findme {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#findme h2 {
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .nav-links a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+    .gallery-item h3 {
+        font-size: 1rem;
+    }
+}
+
+/* 作品详情页样式 */
+.work-detail {
+    padding-top: 60px; /* 减小顶部空间 */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 20px; /* 减小上下内边距 */
+}
+
+.work-detail img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* 减小图片底部间距 */
+    will-change: transform;  /* 提示浏览器图片会发生变化 */
+}
+
+.work-detail h1 {
+    font-size: 1.8rem; /* 稍微减小标题大小 */
+    margin-bottom: 10px; /* 减小标题底部间距 */
+    text-align: center;
+}
+
+.work-description {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.work-description p {
+    margin-bottom: 0.8rem; /* 减小段落间距 */
+    line-height: 1.5; /* 减小行高 */
+    font-size: 1rem; /* 稍微减小字体大小 */
+}
+
+.work-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* 让画廊中的链接继承颜色 */
+.gallery-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    /* 导航栏移动端样式 */
+    .nav-links a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* 画廊移动端样式 */
+    .gallery {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .gallery-item h3 {
+        font-size: 1rem;
+    }
+
+    /* 作品详情页移动端样式 */
+    .work-detail {
+        padding: 50px 10px 15px; /* 移动端更紧凑的内边距 */
+    }
+    
+    .work-detail img {
+        margin-bottom: 8px;
+    }
+    
+    .work-detail h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    
+    .work-description {
+        padding: 0 5px;
+    }
+    
+    .work-description p {
+        margin-bottom: 0.6rem;
+        line-height: 1.4;
+        font-size: 0.9rem;
+    }
+
+    /* Find Me页面移动端样式 */
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+} 
+
+/* 添加平滑滚动 */
+html {
+    scroll-behavior: smooth;
+} 
+
+/* 添加返回按钮样式 */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;  /* 确保在导航栏之上 */
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.back-button:hover {
+    opacity: 1;
+}
+
+.back-button::before {
+    content: "←";
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .back-button {
+        top: 15px;
+        left: 15px;
+        font-size: 0.8rem;
+    }
+} 
