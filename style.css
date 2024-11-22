@@ -32,6 +32,15 @@ nav {
     margin-left: 2rem;
 }
 
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    opacity: 0.8;
+}
+
 /* 首页样式 */
 #home {
     height: 100vh;
@@ -226,38 +235,4 @@ nav {
 /* 添加平滑滚动 */
 html {
     scroll-behavior: smooth;
-} 
-
-/* 添加返回按钮样式 */
-.back-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1001;  /* 确保在导航栏之上 */
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-size: 0.9rem;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.back-button:hover {
-    opacity: 1;
-}
-
-.back-button::before {
-    content: "←";
-    margin-right: 5px;
-    font-size: 1.2rem;
-}
-
-/* 移动端适配 */
-@media screen and (max-width: 768px) {
-    .back-button {
-        top: 15px;
-        left: 15px;
-        font-size: 0.8rem;
-    }
 } 
