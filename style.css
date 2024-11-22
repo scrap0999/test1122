@@ -23,6 +23,10 @@ body {
     font-style: normal;
 }
 
+/* 添加像素字体 */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* 导航栏样式 */
 nav {
     position: fixed;
@@ -34,20 +38,22 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    font-family: 'Cooper Black', Arial, sans-serif !important;
+}
+
+.logo a, .nav-links a {
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
 }
 
 .nav-links a {
-    color: #fff;
-    text-decoration: none;
     margin-left: 2rem;
-    font-family: 'Cooper Black', Arial, sans-serif !important;
 }
 
 .logo a {
     color: #fff;
     text-decoration: none;
-    font-family: 'Cooper Black', Arial, sans-serif !important;
 }
 
 .logo a:hover {
@@ -74,7 +80,8 @@ nav {
 .signature {
     margin-top: 1rem;
     font-size: 1.2rem;
-    font-family: 'Cooper Black', Arial, sans-serif !important;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 0.9rem;
 }
 
 /* 作品展示页样式 */
@@ -116,7 +123,8 @@ nav {
 
 #findme h2 {
     margin-bottom: 2rem;
-    font-family: 'Cooper Black', Arial, sans-serif !important;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 1rem;
 }
 
 .social-links {
@@ -153,10 +161,13 @@ nav {
     
     .nav-links a {
         margin-left: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     .gallery-item h3 {
         font-size: 1rem;
+    }
+    .logo a {
+        font-size: 0.8rem;
     }
 }
 
@@ -207,7 +218,7 @@ nav {
     /* 导航栏移动端样式 */
     .nav-links a {
         margin-left: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     /* 画廊移动端样式 */
@@ -256,6 +267,14 @@ nav {
     .social-links svg {
         width: 40px;  /* 移动端稍微缩小图标 */
         height: 40px;
+    }
+
+    .signature {
+        font-size: 0.8rem;
+    }
+    
+    #findme h2 {
+        font-size: 0.9rem;
     }
 } 
 
