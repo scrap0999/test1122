@@ -16,8 +16,11 @@ body {
 /* 添加字体声明 */
 @font-face {
     font-family: 'Cooper Black';
-    src: url('/fonts/CooperBlack.otf') format('opentype');
+    src: url('./fonts/CooperBlack.otf') format('opentype');
+    src: url('../fonts/CooperBlack.otf') format('opentype');
     font-display: swap;
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* 导航栏样式 */
